@@ -1,349 +1,396 @@
 <!DOCTYPE HTML>
 <html>
-	<!--*************
-	* Heade section *
-	**************-->
-	<head>	
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Simon Lang</title>
+	<link rel="icon" href="images/icon.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<meta name="author" content="Mehmet Ali Incekara" />
+
+  	<!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	<link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
 	
-		<!-- Required meta tags -->
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
 	
-		<!--Show title in tab-->
-		<title>Simon Lang</title>
-		<link rel="icon" href="images/icon.png">
-		
-		<!-- Theme style -->
-		<link rel="stylesheet" href="css/style.css">
-		
-		<!-- Font Awesome -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-		<!-- Bootstrap core CSS -->
-		<link href="css/bootstrap.min.css" rel="stylesheet">
-		<!-- Material Design Bootstrap -->
-		<link href="css/mdb.min.css" rel="stylesheet">
-		
-		<!--Optimized for mobile-->
-		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-		
-		<!-- Include social icons -->
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		
-		<!-- Include handwritten font -->
-		<link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Oxygen+Mono" rel="stylesheet">
-		  
-		<style>
-			h1 {
-				font-family: 'Dancing Script', cursive;
-				font-size: 64px;
-				color: rgba(255, 255, 255, 0.8);				
-				}
-			h2 {
-				font-family: 'Dancing Script', cursive;
-				font-size: 48px;
-				color: rgba(0, 0, 0, 0.8);
-				}
-			h3 {
-				font-family: 'Dancing Script', cursive;
-				font-size: 32px;
-				color: rgba(255, 255, 255, 0.6);
-				}	
-			h4 span {
-				font-family: 'Oxygen Mono', monospace;
-				font-weight: bold;
-				font-size: 20px;
-				background-color: #e1f5fe;
-				color: #000000;
-				padding-right: 16px;
-				padding-left: 16px;
-				padding-top: 4px;
-				padding-bottom: 4px;
-				}
-		</style>
+	<!-- Include social icons -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
 	</head>
-	
-	<!--************
-	* Body section *
-	*************-->
-	<body>			
-		<!--*************
-		* Cover section *
-		**************-->
-		<div class="cover">
-			<div class="cover-color">				
-				<center>
-					<img id="profile" src="images/profile.png" alt="Avatar">
-					<h1 style="padding-top: 64px;">Simon Lang</h1>					
-					<h3 style="padding-top: 32px;">Software Developer</h3>		
-					<ul style="padding-top: 64px;" class="list-inline">
-							<li class="list-inline-item"><a id="socialIcon" class="fa fa-xing" href="https://www.xing.com/profile/Simon_Lang53?sc_o=mxb_p"></a></li>
-							<li class="list-inline-item"><a id="socialIcon" class="fa fa-github" href="https://github.com/ThunderSL"></a></li>							
-							<li class="list-inline-item"><a id="socialIcon" class="fa fa-bitbucket" href="https://bitbucket.org/ThunderSL/"></a></li>
-							<li class="list-inline-item"><a id="socialIcon" class="fa fa-trello" href="https://trello.com/simonlang13"></a></li>							
-					</ul>					
-				</center>								
+	<body>
+	<div id="page">
+	<!-- Banner with Picture, Background and Social Media -->
+	<header id="part-header" class="part-cover js-fullheight" role="banner" style="background-image:url(images/cover.png);">
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2 text-center">
+					<div class="display-t js-fullheight">
+						<div class="display-tc js-fullheight animate-box" data-animate-effect="fadeIn">
+							<div class="profile-thumb" style="background: url(images/profile.png);"></div>
+							<p><span style="font-family: 'Dancing Script', cursive; color: white; font-size: 56px;">Simon Lang</span></p>
+							<p><span style="font-family: 'Dancing Script', cursive; color: white; font-size: 32px;">Software Developer</span></p>
+							<ul class="part-social-icons">
+								<li class="list-inline-item"><a id="socialIcon" class="fa fa-xing" href="https://www.xing.com/profile/Simon_Lang53?sc_o=mxb_p"></a></li>
+								<li class="list-inline-item"><a id="socialIcon" class="fa fa-github" href="https://github.com/ThunderSL"></a></li>							
+								<li class="list-inline-item"><a id="socialIcon" class="fa fa-bitbucket" href="https://bitbucket.org/ThunderSL/"></a></li>
+								<li class="list-inline-item"><a id="socialIcon" class="fa fa-trello" href="https://trello.com/simonlang13"></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
 			</div>
-		</div>			
+		</div>
+	</header>
 	
-		<!--***************
+	<!--***************
 		* Website section *
 		****************-->
 		<div id="websiteCover">			
 			<center>
 				<ul class="list-inline">
-					<li class="list-inline-item"><button id="websiteButton" class="btn btn-indigo" type="button" href="http://langdev.net">Home</button></li>			
-					<li class="list-inline-item"><a id="websiteButton" class="btn btn-indigo" role="button" href="http://langdev.net/blog">Blog</a></li>
+					<li class="list-inline-item"><a id="websiteButton" class="btn btn-primary" role="button" href="http://langdev.net">Home</a></li>			
+					<li class="list-inline-item"><a id="websiteButton" class="btn btn-primary" role="button" href="http://langdev.net/blog">Blog</a></li>
+					<li class="list-inline-item"><a id="websiteButton" class="btn btn-primary" role="button">Contact</a></li>
 				</ul>
 			</center>										
 		</div>
-		
-		<!--<div id="test">													
-		</div>-->
-		
-		<div id="content">
-		
-			<!--****************
-			* About me section *
-			*****************-->
-			<div id="Background">
-				<center>
-					<h2>About me</h2>
-					<p id="aboutme">Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
-					sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
-					sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
-					Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-					Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-					invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
-					accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
-					sanctus est Lorem ipsum dolor sit amet.</p>
-				</center>
-			</div>			
-			
-			<!--**************
-			* Resume section *
-			***************-->
-			<div id="Background">
-				<center class="animated fadeIn">
-					<h2 style="padding-bottom: 64px;">Resume</h2>
-					<h4 style="padding-bottom: 16px;"><span>Work Experience</span></h4>
-					<ul class="timeline" style="font-family: 'Oxygen Mono', monospace;">
-						<li class="timeline-left">
-							<div class="timeline-badge"><img style="margin-top:12px;" src="images/work.png" height="24px" width="24x"></div>
-							<div class="timeline-panel-left animated fadeInLeft">
+
+	<!-- About Me section -->
+	<div id="part-about" class="animate-box">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2 text-center part-heading">
+					<h2>About Me</h2>
+				</div>
+			</div>
+			<h2>Hi there!</h2>
+					<p>I am Simon and live at Lake Constance in Germany. Welcome to a short summary about myself.
+					You will find a small brief introduction, the important parts of my resume, my current set of skills and some of my projects.</p>
+					<p>In my free time I work on different projects to expand my skills and interests and to pursue further work in the area of Software Development
+					and Architecture as a hobby while working on different projects at 1&1 Telecommunication SE in a JavaEE envoirenment.</p>
+					<p>Beside my job I spent my free time with some more hobbies like travelling, music, movies and cars!</p>
+		</div>
+	</div>
+
+	<!-- my resume timeline -->
+	<div id="part-resume" class="part-bg-color">
+		<div class="container">
+			<div class="row animate-box">
+				<div class="col-md-8 col-md-offset-2 text-center part-heading">
+					<h2>Resume</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 col-md-offset-0">
+					<ul class="timeline">
+						<li class="timeline-heading text-center animate-box">
+							<div><h3>Work Experience</h3></div>
+						</li>
+						<li class="animate-box timeline-unverted">
+							<div class="timeline-badge"><i class="icon-suitcase"></i></div>
+							<div class="timeline-panel">
 								<div class="timeline-heading">
-									<p class="timeline-title-left">Software Developer</p>
-									<p class="timeline-header-left">ifm ecomatic gmbh</p>
-									<p class="timeline-time-left">2017 - Current</p>
+									<h3 class="timeline-title">Software Developer</h3>
+									<span class="company">ifm ecomatic gmbh</span>
+									<span class="company">2018 - Current</span>
 								</div>
-								<div class="timeline-body-left">
-									<p>.Net (.Net Standard, .Net Core, Xamarin) Implementing of cross plattform tools for embedded controllers</p>
+								<div class="timeline-body">
+									<p>.Net (.Net Standard, .Net Core, Xamarin) Implementing of cross plattform tools for embedded controllers.</p>
 								</div>
 							</div>
 						</li>
-						
-						<li>
-							<h4 style="padding-bottom: 16px;"><span id="timeline-seperator">Education</span></h4>	
-						</li>						
-						
-						<li class="timeline-right">
-							<div class="timeline-badge"><img style="margin-top:12px;" src="images/education.png" height="24px" width="24x"></div>
-							<div class="timeline-panel-right animated fadeInRight">
+
+						<br>
+						<li class="timeline-heading text-center animate-box">
+							<div><h3>Education</h3></div>
+						</li>
+						<li class="timeline-inverted animate-box">
+							<div class="timeline-badge"><i class="icon-graduation-cap"></i></div>
+							<div class="timeline-panel">
 								<div class="timeline-heading">
-									<p class="timeline-title-right">Bachelors degree of science</p>
-									<p class="timeline-header-right">Cooperative State University Karlsruhe</p>
-									<p class="timeline-time-right">2014 - 2017</p>
+									<h3 class="timeline-title">Bachelors degree of science</h3>
+									<span class="company">Cooperative State University Karlsruhe</span>
+									<span class="company">2014 - 2017</span>
 								</div>
-								<div class="timeline-body-right">
+								<div class="timeline-body">
 									<p>Student of applied computer science. Cooperation with ifm ecomatic gmbh.</p>
 								</div>
 							</div>
 						</li>
-
-						<li class="timeline-left">
-							<div class="timeline-badge"><img style="margin-top:12px;" src="images/education.png" height="24px" width="24x"></div>
-							<div class="timeline-panel-left animated fadeInLeft">
+						<li class="animate-box timeline-unverted">
+							<div class="timeline-badge"><i class="icon-graduation-cap"></i></div>
+							<div class="timeline-panel">
 								<div class="timeline-heading">
-									<p class="timeline-title-left">General university entrance qualification</p>
-									<p class="timeline-header-left">Vocational high school Öhringen</p>
-									<p class="timeline-time-left">2011 - 2014</p>
+									<h3 class="timeline-title">General university entrance qualification</h3>
+									<span class="company">Vocational high school Öhringen</span>
+									<span class="company">2011 - 2014</span>
 								</div>
-								<div class="timeline-body-left">
+								<div class="timeline-body">
 									<p>Focus on computer science</p>
 								</div>
 							</div>
 						</li>						
-					</ul>
-				</center>
+			    	</ul>
+				</div>
 			</div>
-			
-			<!--*************
-			* Skill section *
-			**************-->
-			<div id="Background">		
-				<center class="animated fadeIn">
-					<h2 style="padding-bottom: 64px;">Skills</h2>
-					
-					<div style="margin-left: 20%; margin-right:20%;padding:48px; border-radius: 25px; background-color: rgba(179, 229, 252, 0.4);">
-						<div class="row" style="text-align: left; font-family: 'Oxygen Mono', monospace;">
-							<div class="col-md-6">
-								<div>
-									<p class="skill-title">Top Programming Languages and Platforms</p>
-									<p class="skill-header">C#</p>
-									<div class="progress" style="height:6px; margin-bottom: 24px;">
-										<div class="progress-bar progress-bar-striped" role="progressbar" style="height:5px; width: 100%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-									</div>
-									<p class="skill-header">.Net (.Net Standard, .Net Core, .Net Framework)</p>
-									<div class="progress" style="height:6px; margin-bottom: 24px;">
-										<div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="height:5px; width: 100%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-									</div>
-									<p class="skill-header">Xamarin (Android, iOS, UWP)</p>
-									<div class="progress" style="height:6px; margin-bottom: 24px;">
-										<div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="height:5px; width: 80%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-									</div>
-									<p class="skill-header">Webfrontend (HTML, CSS, JS)</p>
-									<div class="progress" style="height:6px; margin-bottom: 24px;">
-										<div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="height:5px; width: 60%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-									</div>
-									<p class="skill-header">Database (Sql, NoSql, SqLite)</p>
-									<div class="progress" style="height:6px; margin-bottom: 24px;">
-										<div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="height:5px; width: 60%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-									</div>		
-									<p class="skill-header">.AspNet (WebApp, WebApi)</p>
-									<div class="progress" style="height:6px; margin-bottom: 24px;">
-										<div class="progress-bar progress-bar-striped" role="progressbar" style="height:5px; width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-									</div>														
-									<p class="skill-header">Java</p>
-									<div class="progress" style="height:6px; margin-bottom: 24px;">
-										<div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="height:5px; width: 40%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-									</div>
-									<p class="skill-header">PHP</p>
-									<div class="progress" style="height:6px; margin-bottom: 24px;">
-										<div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="height:5px; width: 30%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-									</div>
-									<p class="skill-header">C, C++, ...</p>
-								</div>							
-							</div>
-						
-							<div class="col-md-6">
-								<div>
-									<p class="skill-title">Top Tooling</p>
-									<p class="skill-header">Visual Studio</p>
-									<div class="progress" style="height:6px; margin-bottom: 24px;">
-										<div class="progress-bar progress-bar-striped" role="progressbar" style="height:5px; width: 100%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-									</div>
-									<p class="skill-header">Git (GitHub and Bitbucket)</p>
-									<div class="progress" style="height:6px; margin-bottom: 24px;">
-										<div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="height:5px; width: 80%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-									</div>
-									<p class="skill-header">Subversion</p>
-									<div class="progress" style="height:6px; margin-bottom: 24px;">
-										<div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="height:5px; width: 70%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-									</div>
-									<p class="skill-header">Wordpress</p>
-									<div class="progress" style="height:6px; margin-bottom: 24px;">
-										<div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="height:5px; width: 65%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-									</div>		
-									<p class="skill-header">Intellij</p>
-									<div class="progress" style="height:6px; margin-bottom: 24px;">
-										<div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="height:5px; width: 60%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-									</div>
-									<p class="skill-header">Docker</p>
-									<div class="progress" style="height:6px; margin-bottom: 24px;">
-										<div class="progress-bar progress-bar-striped" role="progressbar" style="height:5px; width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-									</div>									
-									<p class="skill-header">polarionec</p>
-									<div class="progress" style="height:6px; margin-bottom: 24px;">
-										<div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="height:5px; width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-									</div>
-									<p class="skill-header">Jira</p>
-									<div class="progress" style="height:6px; margin-bottom: 24px;">
-										<div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="height:5px; width: 40%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-									</div>									
-									<p class="skill-header">Bootstrap, Trello, Vim ...</p>
-								</div>
-							</div>
+		</div>
+	</div>
+	
+	<!-- Skills -->
+	<div id="part-skills" class="animate-box">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2 text-center part-heading">
+					<h2>Skills</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<p>Top Programming Languages and Platforms</p>
+					<div class="progress-wrap">
+						<h3><span class="name-left">C#</span><span class="value-right"></span></h3>
+						<div class="progress">
+						  <div class="progress-bar progress-bar-1 progress-bar-striped active" role="progressbar"
+						  aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:100%">
+						  </div>
 						</div>
 					</div>
-					
-										
-				</center>			
-			</div>	
+					<div class="progress-wrap">
+						<h3><span class="name-left">.Net (.Net Standard, .Net Core, .Net Framework)</span><span class="value-right"></span></h3>
+						<div class="progress">
+						  <div class="progress-bar progress-bar-2 progress-bar-striped active" role="progressbar"
+						  aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:100%">
+						  </div>
+						</div>
+					</div>
+					<div class="progress-wrap">
+						<h3><span class="name-left">Xamarin (Android, iOS, UWP)</span><span class="value-right"></span></h3>
+						<div class="progress">
+						  <div class="progress-bar progress-bar-3 progress-bar-striped active" role="progressbar"
+						  aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%">
+						  </div>
+						</div>
+					</div>
+					<div class="progress-wrap">
+						<h3><span class="name-left">Webfrontend (HTML, CSS, JS)</span><span class="value-right"></span></h3>
+						<div class="progress">
+						  <div class="progress-bar progress-bar-4 progress-bar-striped active" role="progressbar"
+						  aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width:60%">
+						  </div>
+						</div>
+					</div>
+					<div class="progress-wrap">
+						<h3><span class="name-left">Database (Sql, NoSql, SqLite)</span><span class="value-right"></span></h3>
+						<div class="progress">
+						  <div class="progress-bar progress-bar-1 progress-bar-striped active" role="progressbar"
+						  aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:60%">
+						  </div>
+						</div>
+					</div>
+					<div class="progress-wrap">
+						<h3><span class="name-left">.AspNet (WebApp, WebApi)</span><span class="value-right"></span></h3>
+						<div class="progress">
+						  <div class="progress-bar progress-bar-2 progress-bar-striped active" role="progressbar"
+						  aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:50%">
+						  </div>
+						</div>
+					</div>
+					<div class="progress-wrap">
+						<h3><span class="name-left">Java</span><span class="value-right"></span></h3>
+						<div class="progress">
+						  <div class="progress-bar progress-bar-3 progress-bar-striped active" role="progressbar"
+						  aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:40%">
+						  </div>
+						</div>
+					</div>
+					<div class="progress-wrap">
+						<h3><span class="name-left">PHP</span><span class="value-right"></span></h3>
+						<div class="progress">
+						  <div class="progress-bar progress-bar-4 progress-bar-striped active" role="progressbar"
+						  aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width:30%">
+						  </div>
+						</div>
+					</div>
+					<div class="progress-wrap">
+						<p class="skill-header">C, C++, ...</p>
+					</div>					
+				</div>
+				<div class="col-md-6">
+					<p> Top Tooling </p>
+					<div class="progress-wrap">
+						<h3><span class="name-left">Visual Studio</span><span class="value-right"></span></h3>
+						<div class="progress">
+						  <div class="progress-bar progress-bar-1 progress-bar-striped active" role="progressbar"
+						  aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%">
+						  </div>
+						</div>
+					</div><div class="progress-wrap">
+						<h3><span class="name-left">Git (GitHub and Bitbucket)</span><span class="value-right"></span></h3>
+						<div class="progress">
+						  <div class="progress-bar progress-bar-2 progress-bar-striped active" role="progressbar"
+						  aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:80%">
+						  </div>
+						</div>
+					</div>
+					<div class="progress-wrap">
+						<h3><span class="name-left">Subversion</span><span class="value-right"></span></h3>
+						<div class="progress">
+						  <div class="progress-bar progress-bar-3 progress-bar-striped active" role="progressbar"
+						  aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+						  </div>
+						</div>
+					</div>
+					<div class="progress-wrap">
+						<h3><span class="name-left">Wordpress</span><span class="value-right"></span></h3>
+						<div class="progress">
+						  <div class="progress-bar progress-bar-4 progress-bar-striped active" role="progressbar"
+						  aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width:65%">
+						  </div>
+						</div>
+					</div>
+					<div class="progress-wrap">
+						<h3><span class="name-left">Intellij</span><span class="value-right"></span></h3>
+						<div class="progress">
+						  <div class="progress-bar progress-bar-1 progress-bar-striped active" role="progressbar"
+						  aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:60%">
+						  </div>
+						</div>
+					</div>
+					<div class="progress-wrap">
+						<h3><span class="name-left">Docker</span><span class="value-right"></span></h3>
+						<div class="progress">
+						  <div class="progress-bar progress-bar-1 progress-bar-striped active" role="progressbar"
+						  aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:50%">
+						  </div>
+						</div>
+					</div><div class="progress-wrap">
+						<h3><span class="name-left">polarion</span><span class="value-right"></span></h3>
+						<div class="progress">
+						  <div class="progress-bar progress-bar-2 progress-bar-striped active" role="progressbar"
+						  aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:50%">
+						  </div>
+						</div>
+					</div>
+					<div class="progress-wrap">
+						<h3><span class="name-left">Jira</span><span class="value-right"></span></h3>
+						<div class="progress">
+						  <div class="progress-bar progress-bar-3 progress-bar-striped active" role="progressbar"
+						  aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width:50%">
+						  </div>
+						</div>
+					</div>
+					<div class="progress-wrap">
+						<p class="skill-header">Bootstrap, Trello, Vim, ...</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- Projects -->
+	<div id="part-work" class="animate-box">
+		<div class="container">
+			<div class="row animate-box">
+				<div class="col-md-8 col-md-offset-2 text-center part-heading">
+					<h2>Projects</h2>
+				</div>
+			</div>
+			<div class="row">
+				<!--<div class="col-md-3 text-center col-padding animate-box">
+					<a target="_blank" href="https://bitbucket.org/ThunderSL/foodlog" class="work" style="background-image: url(images/portfolio-1.png);">
+						<div class="desc">
+							<h3>foodlog</h3>
+							<span>Mobile cross platform app</span>
+						</div>
+					</a>
+				</div>-->
+				<div class="col-md-3 text-center col-padding animate-box" style="background-color: #e1f5fe;">
+					<a target="_blank" href="https://github.com/ThunderSL/sl.xamarin.multilingual" class="work">
+						<div style="display: table-cell; vertical-align: middle;">
+							<h3 style="font-size: 16px;">sl.xamarin.multilingual</h3>
+							<span style="font-size: 14px; color: #9e9e9e;">Xamarin plugin</span>
+						</div>
+					</a>
+				</div>
+				<div class="col-md-3 text-center col-padding animate-box" style="background-color: #e1f5fe;">
+					<a target="_blank" href="https://github.com/ThunderSL/sl.xamarin.sqlite" class="work">
+						<div style="display: table-cell; vertical-align: middle;">
+							<h3 style="font-size: 16px;">sl.xamarin.sqlite</h3>
+							<span style="font-size: 14px; color: #9e9e9e;">Xamarin plugin</span>
+						</div>
+					</a>
+				</div>
+				<div class="col-md-3 text-center col-padding animate-box" style="background-color: #e1f5fe;">
+					<a target="_blank" href="https://github.com/ThunderSL/AspNetCore-WebApi" class="work">
+						<div style="display: table-cell; vertical-align: middle;">
+							<h3 style="font-size: 16px;">AspNetCore-WebApi</h3>
+							<span style="font-size: 14px; color: #9e9e9e;">WebApi</span>
+						</div>
+					</a>
+				</div>
+				<!--<div class="col-md-3 text-center col-padding animate-box">
+					<a target="_blank" href="https://github.com/ThunderSL/ResxHandler" class="work" style="background-image: url(images/portfolio-4.jpg);">
+						<div class="desc">
+							<h3>ResxHandler</h3>
+							<span>Handler for res files</span>
+						</div>
+					</a>
+				</div>-->
+			</div>
+		</div>
+	</div>
 
-			<!--***************
-			* Project section *
-			****************-->
-			<div id="Background">
-				<center>
-					<h2 style="padding-bottom: 64px;">Projects</h2>
-					
-					<ul class="list-inline">
-						<!--<li class="list-inline-item" style="margin-left: 16px; margin-right: 16px;">
-							<div class="card" style="width:256px;">
-								<div class="card-header primary-color lighten-1 white-text">foodlog</div>
-								<div class="card-body">
-									<img src="images/foodlog.png" height="128px" width="128px" style="margin-bottom: 16px; margin-top: 16px;">
-									<a class="btn btn-primary">Here</a>
-								</div>
-							</div>
-						</li>-->
-						<li class="list-inline-item" style="margin-left: 16px; margin-right: 16px;">
-							<div class="card" style="width:256px;">
-								<div class="card-header primary-color lighten-1 white-text">sl.xamarin.multilingual</div>
-								<div class="card-body">
-									<a href="https://github.com/ThunderSL/sl.xamarin.multilingual">
-										<img src="images/xamarin.png" height="128px" width="128px" style="margin-bottom: 16px; margin-top: 16px;">
-									</a>
-								</div>
-							</div>
-						</li>
-						<li class="list-inline-item" style="margin-left: 16px; margin-right: 16px;">
-							<div class="card" style="width:256px;">
-								<div class="card-header primary-color lighten-1 white-text">sl.xamarin.sqlite</div>
-								<div class="card-body">
-									<a href="https://github.com/ThunderSL/sl.xamarin.sqlite">
-										<img src="images/xamarin.png" height="128px" width="128px" style="margin-bottom: 16px; margin-top: 16px;">
-									</a>
-								</div>
-							</div>
-						</li>
-						<li class="list-inline-item" style="margin-left: 16px; margin-right: 16px;">
-							<div class="card" style="width:256px;">
-								<div class="card-header primary-color lighten-1 white-text">AspNetCore-WebApi</div>
-								<div class="card-body">
-									<a href="https://github.com/ThunderSL/AspNetCore-WebApi">
-										<img src="images/aspnet.png" height="128px" width="128px" style="margin-bottom: 16px; margin-top: 16px;">
-									</a>
-								</div>
-							</div>
-						</li>
-						<!--<li class="list-inline-item" style="margin-left: 16px; margin-right: 16px;">
-							<div class="card" style="width:256px;">
-								<div class="card-header primary-color lighten-1 white-text">ResxHandler</div>
-								<div class="card-body">
-									<img src="images/net.png" height="128px" width="128px" style="margin-bottom: 16px; margin-top: 16px;">
-									<a class="btn btn-primary">Here</a>
-								</div>
-							</div>
-						</li>-->
-					</ul>				
-				</center>			
-			</div>			
-		</div>	
-		
-		
-		
-		
-		<!-- SCRIPTS -->
-		<!-- JQuery -->
-		<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
-		<!-- Bootstrap tooltips -->
-		<script type="text/javascript" src="js/popper.min.js"></script>
-		<!-- Bootstrap core JavaScript -->
-		<script type="text/javascript" src="js/bootstrap.min.js"></script>
-		<!-- MDB core JavaScript -->
-		<script type="text/javascript" src="js/mdb.min.js"></script>
+	<div class="gototop js-top">
+		<a href="#" class="js-gotop"><i class="icon-arrow-up22"></i></a>
+	</div>
+	
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Stellar Parallax -->
+	<script src="js/jquery.stellar.min.js"></script>
+	<!-- Easy PieChart -->
+	<script src="js/jquery.easypiechart.min.js"></script>
+	<!-- Recaptcha -->
+	<script src="https://www.google.com/recaptcha/api.js?onload=reCAPTCHA_Widget&render=explicit&hl=en" async defer></script>
+	<!-- Main -->
+	<script src="js/main.js"></script>
+
 	</body>
 </html>
 
