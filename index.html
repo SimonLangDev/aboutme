@@ -8,6 +8,7 @@
 		<!-- Required meta tags -->
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
 	
 		<!--Show title in tab-->
 		<title>Simon Lang</title>
@@ -20,6 +21,8 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 		<!-- Bootstrap core CSS -->
 		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<!-- Material Design Bootstrap -->
+		<link href="css/mdb.min.css" rel="stylesheet">
 		
 		<!--Optimized for mobile-->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -51,13 +54,13 @@
 				font-family: 'Oxygen Mono', monospace;
 				font-weight: bold;
 				font-size: 20px;
-				background-color: #eeeeee;
+				background-color: #e1f5fe;
 				color: #000000;
 				padding-right: 16px;
 				padding-left: 16px;
 				padding-top: 4px;
 				padding-bottom: 4px;
-				}				
+				}
 		</style>
 	</head>
 	
@@ -90,8 +93,8 @@
 		<div id="websiteCover">			
 			<center>
 				<ul class="list-inline">
-					<li class="list-inline-item"><a id="websiteButton" class="btn btn-outline-light btn-lg" role="button" href="http://langdev.net">Home</a></li>			
-					<li class="list-inline-item"><a id="websiteButton" class="btn btn-outline-light btn-lg" role="button" href="http://langdev.net/blog">Blog</a></li>
+					<li class="list-inline-item"><button id="websiteButton" class="btn btn-indigo" type="button" href="http://langdev.net">Home</button></li>			
+					<li class="list-inline-item"><a id="websiteButton" class="btn btn-indigo" role="button" href="http://langdev.net/blog">Blog</a></li>
 				</ul>
 			</center>										
 		</div>
@@ -104,129 +107,73 @@
 			<!--****************
 			* About me section *
 			*****************-->
-			<div id="aboutmeBackground">
+			<div id="Background">
 				<center>
-				<h2>About me</h2>
-				<p id="aboutme">Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
-				sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
-				sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
-				Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-				Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-				invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
-				accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
-				sanctus est Lorem ipsum dolor sit amet.</p>
-			</center>
+					<h2>About me</h2>
+					<p id="aboutme">Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+					sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+					sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+					Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+					Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+					invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
+					accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+					sanctus est Lorem ipsum dolor sit amet.</p>
+				</center>
 			</div>			
 			
 			<!--**************
 			* Resume section *
 			***************-->
-			<div id="resumeBackground">
-				<center>
+			<div id="Background">
+				<center class="animated fadeIn">
 					<h2 style="padding-bottom: 64px;">Resume</h2>
-					<ul class="timeline">
-						<li style="padding-bottom:32px;">
-							<h4><span>Work Experience</span></h4>
+					<h4 style="padding-bottom: 16px;"><span>Work Experience</span></h4>
+					<ul class="timeline" style="font-family: 'Oxygen Mono', monospace;">
+						<li class="timeline-left">
+							<div class="timeline-badge"><img style="margin-top:12px;" src="images/work.png" height="24px" width="24x"></div>
+							<div class="timeline-panel-left animated fadeInLeft">
+								<div class="timeline-heading">
+									<p class="timeline-title-left">Software Developer</p>
+									<p class="timeline-header-left">ifm ecomatic gmbh</p>
+									<p class="timeline-time-left">2017 - Current</p>
+								</div>
+								<div class="timeline-body-left">
+									<p>.Net (.Net Standard, .Net Core, Xamarin) Implementing of cross plattform tools for embedded controllers</p>
+								</div>
+							</div>
 						</li>
+						
 						<li>
-						  <div class="timeline-badge"><i class="glyphicon glyphicon-check"></i></div>
-						  <div class="timeline-panel">
-							<div class="timeline-heading">
-							  <h4 class="timeline-title">Mussum ipsum cacilds</h4>
-							  <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 11 hours ago via Twitter</small></p>
+							<h4 style="padding-bottom: 16px;"><span id="timeline-seperator">Education</span></h4>	
+						</li>						
+						
+						<li class="timeline-right">
+							<div class="timeline-badge"><img style="margin-top:12px;" src="images/education.png" height="24px" width="24x"></div>
+							<div class="timeline-panel-right animated fadeInRight">
+								<div class="timeline-heading">
+									<p class="timeline-title-right">Bachelors degree of science</p>
+									<p class="timeline-header-right">Cooperative State University Karlsruhe</p>
+									<p class="timeline-time-right">2014 - 2017</p>
+								</div>
+								<div class="timeline-body-right">
+									<p>Student of applied computer science. Cooperation with ifm ecomatic gmbh.</p>
+								</div>
 							</div>
-							<div class="timeline-body">
-							  <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo.
-								Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
-							</div>
-						  </div>
 						</li>
-						<li class="timeline-inverted">
-						  <div class="timeline-badge warning"><i class="glyphicon glyphicon-credit-card"></i></div>
-						  <div class="timeline-panel">
-							<div class="timeline-heading">
-							  <h4 class="timeline-title">Mussum ipsum cacilds</h4>
+
+						<li class="timeline-left">
+							<div class="timeline-badge"><img style="margin-top:12px;" src="images/education.png" height="24px" width="24x"></div>
+							<div class="timeline-panel-left animated fadeInLeft">
+								<div class="timeline-heading">
+									<p class="timeline-title-left">General university entrance qualification</p>
+									<p class="timeline-header-left">Vocational high school Öhringen</p>
+									<p class="timeline-time-left">2011 - 2014</p>
+								</div>
+								<div class="timeline-body-left">
+									<p>Focus on computer science</p>
+								</div>
 							</div>
-							<div class="timeline-body">
-							  <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo.
-								Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
-							  <p>Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis. Interagi no mé, cursus quis, vehicula ac nisi. Aenean vel dui dui. Nullam leo erat, aliquet quis tempus a, posuere ut mi. Ut scelerisque neque et turpis posuere
-								pulvinar pellentesque nibh ullamcorper. Pharetra in mattis molestie, volutpat elementum justo. Aenean ut ante turpis. Pellentesque laoreet mé vel lectus scelerisque interdum cursus velit auctor. Lorem ipsum dolor sit amet, consectetur adipiscing
-								elit. Etiam ac mauris lectus, non scelerisque augue. Aenean justo massa.</p>
-							</div>
-						  </div>
-						</li>
-						<li>
-						  <div class="timeline-badge danger"><i class="glyphicon glyphicon-credit-card"></i></div>
-						  <div class="timeline-panel">
-							<div class="timeline-heading">
-							  <h4 class="timeline-title">Mussum ipsum cacilds</h4>
-							</div>
-							<div class="timeline-body">
-							  <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo.
-								Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
-							</div>
-						  </div>
-						</li>
-						<li class="timeline-inverted">
-						  <div class="timeline-panel">
-							<div class="timeline-heading">
-							  <h4 class="timeline-title">Mussum ipsum cacilds</h4>
-							</div>
-							<div class="timeline-body">
-							  <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo.
-								Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
-							</div>
-						  </div>
-						</li>
-						<li>
-						  <div class="timeline-badge info"><i class="glyphicon glyphicon-floppy-disk"></i></div>
-						  <div class="timeline-panel">
-							<div class="timeline-heading">
-							  <h4 class="timeline-title">Mussum ipsum cacilds</h4>
-							</div>
-							<div class="timeline-body">
-							  <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo.
-								Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
-							  <hr>
-							  <div class="btn-group">
-								<button type="button" class="btn btn-primary btn-sm dropdown-toggle" data-toggle="dropdown">
-								  <i class="glyphicon glyphicon-cog"></i> <span class="caret"></span>
-								</button>
-								<ul class="dropdown-menu" role="menu">
-								  <li><a href="#">Action</a></li>
-								  <li><a href="#">Another action</a></li>
-								  <li><a href="#">Something else here</a></li>
-								  <li class="divider"></li>
-								  <li><a href="#">Separated link</a></li>
-								</ul>
-							  </div>
-							</div>
-						  </div>
-						</li>
-						<li>
-						  <div class="timeline-panel">
-							<div class="timeline-heading">
-							  <h4 class="timeline-title">Mussum ipsum cacilds</h4>
-							</div>
-							<div class="timeline-body">
-							  <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo.
-								Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
-							</div>
-						  </div>
-						</li>
-						<li class="timeline-inverted">
-						  <div class="timeline-badge success"><i class="glyphicon glyphicon-thumbs-up"></i></div>
-						  <div class="timeline-panel">
-							<div class="timeline-heading">
-							  <h4 class="timeline-title">Mussum ipsum cacilds</h4>
-							</div>
-							<div class="timeline-body">
-							  <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo.
-								Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
-							</div>
-						  </div>
-						</li>
+						</li>						
 					</ul>
 				</center>
 			</div>
@@ -234,17 +181,154 @@
 			<!--*************
 			* Skill section *
 			**************-->
-			<div>
-			
-			
+			<div id="Background">		
+				<center class="animated fadeIn">
+					<h2 style="padding-bottom: 64px;">Skills</h2>
+					
+					<div style="margin-left: 20%; margin-right:20%;padding:48px; border-radius: 25px; background-color: rgba(179, 229, 252, 0.4);">
+						<div class="row" style="text-align: left; font-family: 'Oxygen Mono', monospace;">
+							<div class="col-md-6">
+								<div>
+									<p class="skill-title">Top Programming Languages and Platforms</p>
+									<p class="skill-header">C#</p>
+									<div class="progress" style="height:6px; margin-bottom: 24px;">
+										<div class="progress-bar progress-bar-striped" role="progressbar" style="height:5px; width: 100%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+									</div>
+									<p class="skill-header">.Net (.Net Standard, .Net Core, .Net Framework)</p>
+									<div class="progress" style="height:6px; margin-bottom: 24px;">
+										<div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="height:5px; width: 100%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+									</div>
+									<p class="skill-header">Xamarin (Android, iOS, UWP)</p>
+									<div class="progress" style="height:6px; margin-bottom: 24px;">
+										<div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="height:5px; width: 80%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+									</div>
+									<p class="skill-header">Webfrontend (HTML, CSS, JS)</p>
+									<div class="progress" style="height:6px; margin-bottom: 24px;">
+										<div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="height:5px; width: 60%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+									</div>
+									<p class="skill-header">Database (Sql, NoSql, SqLite)</p>
+									<div class="progress" style="height:6px; margin-bottom: 24px;">
+										<div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="height:5px; width: 60%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+									</div>		
+									<p class="skill-header">.AspNet (WebApp, WebApi)</p>
+									<div class="progress" style="height:6px; margin-bottom: 24px;">
+										<div class="progress-bar progress-bar-striped" role="progressbar" style="height:5px; width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+									</div>														
+									<p class="skill-header">Java</p>
+									<div class="progress" style="height:6px; margin-bottom: 24px;">
+										<div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="height:5px; width: 40%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+									</div>
+									<p class="skill-header">PHP</p>
+									<div class="progress" style="height:6px; margin-bottom: 24px;">
+										<div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="height:5px; width: 30%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+									</div>
+									<p class="skill-header">C, C++, ...</p>
+								</div>							
+							</div>
+						
+							<div class="col-md-6">
+								<div>
+									<p class="skill-title">Top Tooling</p>
+									<p class="skill-header">Visual Studio</p>
+									<div class="progress" style="height:6px; margin-bottom: 24px;">
+										<div class="progress-bar progress-bar-striped" role="progressbar" style="height:5px; width: 100%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+									</div>
+									<p class="skill-header">Git (GitHub and Bitbucket)</p>
+									<div class="progress" style="height:6px; margin-bottom: 24px;">
+										<div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="height:5px; width: 80%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+									</div>
+									<p class="skill-header">Subversion</p>
+									<div class="progress" style="height:6px; margin-bottom: 24px;">
+										<div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="height:5px; width: 70%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+									</div>
+									<p class="skill-header">Wordpress</p>
+									<div class="progress" style="height:6px; margin-bottom: 24px;">
+										<div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="height:5px; width: 65%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+									</div>		
+									<p class="skill-header">Intellij</p>
+									<div class="progress" style="height:6px; margin-bottom: 24px;">
+										<div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="height:5px; width: 60%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+									</div>
+									<p class="skill-header">Docker</p>
+									<div class="progress" style="height:6px; margin-bottom: 24px;">
+										<div class="progress-bar progress-bar-striped" role="progressbar" style="height:5px; width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+									</div>									
+									<p class="skill-header">polarionec</p>
+									<div class="progress" style="height:6px; margin-bottom: 24px;">
+										<div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="height:5px; width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+									</div>
+									<p class="skill-header">Jira</p>
+									<div class="progress" style="height:6px; margin-bottom: 24px;">
+										<div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="height:5px; width: 40%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+									</div>									
+									<p class="skill-header">Bootstrap, Trello, Vim ...</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+										
+				</center>			
 			</div>	
 
 			<!--***************
 			* Project section *
 			****************-->
-			<div>
-			
-			
+			<div id="Background">
+				<center>
+					<h2 style="padding-bottom: 64px;">Projects</h2>
+					
+					<ul class="list-inline">
+						<!--<li class="list-inline-item" style="margin-left: 16px; margin-right: 16px;">
+							<div class="card" style="width:256px;">
+								<div class="card-header primary-color lighten-1 white-text">foodlog</div>
+								<div class="card-body">
+									<img src="images/foodlog.png" height="128px" width="128px" style="margin-bottom: 16px; margin-top: 16px;">
+									<a class="btn btn-primary">Here</a>
+								</div>
+							</div>
+						</li>-->
+						<li class="list-inline-item" style="margin-left: 16px; margin-right: 16px;">
+							<div class="card" style="width:256px;">
+								<div class="card-header primary-color lighten-1 white-text">sl.xamarin.multilingual</div>
+								<div class="card-body">
+									<a href="https://github.com/ThunderSL/sl.xamarin.multilingual">
+										<img src="images/xamarin.png" height="128px" width="128px" style="margin-bottom: 16px; margin-top: 16px;">
+									</a>
+								</div>
+							</div>
+						</li>
+						<li class="list-inline-item" style="margin-left: 16px; margin-right: 16px;">
+							<div class="card" style="width:256px;">
+								<div class="card-header primary-color lighten-1 white-text">sl.xamarin.sqlite</div>
+								<div class="card-body">
+									<a href="https://github.com/ThunderSL/sl.xamarin.sqlite">
+										<img src="images/xamarin.png" height="128px" width="128px" style="margin-bottom: 16px; margin-top: 16px;">
+									</a>
+								</div>
+							</div>
+						</li>
+						<li class="list-inline-item" style="margin-left: 16px; margin-right: 16px;">
+							<div class="card" style="width:256px;">
+								<div class="card-header primary-color lighten-1 white-text">AspNetCore-WebApi</div>
+								<div class="card-body">
+									<a href="https://github.com/ThunderSL/AspNetCore-WebApi">
+										<img src="images/aspnet.png" height="128px" width="128px" style="margin-bottom: 16px; margin-top: 16px;">
+									</a>
+								</div>
+							</div>
+						</li>
+						<!--<li class="list-inline-item" style="margin-left: 16px; margin-right: 16px;">
+							<div class="card" style="width:256px;">
+								<div class="card-header primary-color lighten-1 white-text">ResxHandler</div>
+								<div class="card-body">
+									<img src="images/net.png" height="128px" width="128px" style="margin-bottom: 16px; margin-top: 16px;">
+									<a class="btn btn-primary">Here</a>
+								</div>
+							</div>
+						</li>-->
+					</ul>				
+				</center>			
 			</div>			
 		</div>	
 		
@@ -253,11 +337,13 @@
 		
 		<!-- SCRIPTS -->
 		<!-- JQuery -->
-		<script type="text/javascript" src="js/jquery-3.2.1.min.js"</script>
+		<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
 		<!-- Bootstrap tooltips -->
 		<script type="text/javascript" src="js/popper.min.js"></script>
 		<!-- Bootstrap core JavaScript -->
 		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<!-- MDB core JavaScript -->
+		<script type="text/javascript" src="js/mdb.min.js"></script>
 	</body>
 </html>
 
