@@ -545,7 +545,7 @@
   margin-top: 64px;
 }
 .progress {
-  height: 4px;
+  height: 6px;
   margin-bottom: 16px;
 }
 .progress-bar {
@@ -587,6 +587,9 @@
 @media only screen and (min-width: 1024px) {
   .skill-column {
     display: table-cell;
+  }
+  .skill-column {
+    padding: 24px;
   }
 }
 /******************/
