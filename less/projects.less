@@ -1,0 +1,59 @@
+/******************/
+/* Project styles */
+/******************/
+
+#projects {
+	margin: 64px 0px;
+	list-style-type: none;
+	-webkit-padding-start: 0;
+}
+
+.card {
+	width: 192px;
+	
+	font-family: 'Oxygen Mono', monospace;
+	color: @inverted-text-color;
+	text-decoration: none;
+	
+	margin: 16px;
+	
+	.card-header {
+		font-size: 16px;
+	}
+	.card-body{	
+		
+		.card-image {
+			height: 96px;
+			width: 96px;
+		}
+		.card-text {
+			display: inline-block;
+			
+			opacity: 0.8;
+			font-size: 12px;
+			
+			margin-top: 16px;
+		}
+	}
+}
+
+@media only screen and (min-width: 512px) and (max-width: 1023px){
+
+	#projects {		
+		display: inline-block;
+		width: 512px;
+	}
+	.project {
+		display: inline-block;
+	}
+}
+@media only screen and (min-width: 1024px){
+
+	#projects {		
+		display: inline-block;
+		width: 1024px;
+	}
+	.project {
+		display: inline-block;
+	}
+}

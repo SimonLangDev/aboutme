@@ -1,0 +1,267 @@
+@timeline-color: #e1f5fe;
+@timeline-badge-backcolor: #b3e5fc;
+@timeline-badge-color: #ffffff;
+
+@timeline-badge-workexperience: url(../images/work.png);
+@timeline-badge-education: url(../images/education.png);
+
+/*****************/
+/* Resume styles */
+/*****************/
+
+#resume {
+	display: inline-block;
+
+	height: auto;
+	width : auto;
+	
+	font-family: 'Oxygen Mono', monospace;
+	color: @inverted-text-color;
+	
+	padding-top: 48px;	
+}
+
+/*******************/
+/* Timeline styles */
+/*******************/
+
+.timeline {
+	list-style: none;
+	padding: 0px 24px;
+	position: relative;
+}
+
+.timeline:before {
+	top: 0;
+	bottom: 0;
+	position: absolute;
+	content: " ";
+	width: 2px;
+	background-color: rgba(33, 33, 33, 0.4);	
+	margin-left: -1px;	
+}
+
+.timeline > li {
+	margin-bottom: 16px;
+	position: relative;
+}
+
+.timeline > li:before,
+.timeline > li:after {
+	content: " ";
+	display: table;
+}
+
+.timeline > li:after {
+	clear: both;
+}
+
+.timeline > li:before,
+.timeline > li:after {
+	content: " ";
+	display: table;
+}
+
+.timeline > li:after {
+  clear: both;
+}
+
+/*********************/
+/* Timeline elements */
+/*********************/
+
+.timeline-section{
+	display: inline-block;
+
+	font-size: 20px;
+	background-color: @timeline-color;
+
+	border-radius: 16px;
+	
+	padding: 8px 16px;
+}
+
+.timeline-badge-base {
+	color: @timeline-badge-color;
+	background-color: @timeline-badge-backcolor;
+  
+	width: 48px;
+	height: 48px;
+  
+	text-align: center;
+	position: absolute;
+  
+	top: 4px;  
+	margin-left: -24px;	
+  
+	border-radius: 50%;
+  
+  .base {
+	height: 24px;
+	width: 24px;
+	
+	margin: 25%;
+  }
+  .workexperience {
+	.base;
+	content: @timeline-badge-workexperience;	
+  }
+  .education {
+	.base;
+	content: @timeline-badge-education;
+  }
+}
+
+/******************/
+/* Panel elements */
+/******************/
+
+@timeline-panel-margin: 64px;
+
+@media only screen and (max-width: 1023px){
+
+	.timeline:before {
+		left: 34px;
+	}
+	
+	.timeline-section{
+		float: left;
+		margin-left: -8px;
+
+		font-size: 18px;
+		
+		padding: 6px 12px;
+	}
+	
+	.timeline-badge-base {
+		color: @timeline-badge-color;
+		background-color: @timeline-badge-backcolor;
+	  
+		width: 36px;
+		height: 36px;
+	  
+		text-align: left;
+		position: absolute;
+	  
+		top: 8px;  
+		margin-left: -24px;	
+	  
+		border-radius: 50%;
+	  
+	  .base {
+		height: 18px;
+		width: 18px;
+		
+		margin: 25%;
+	  }
+	  .workexperience {
+		.base;
+		content: @timeline-badge-workexperience;	
+	  }
+	  .education {
+		.base;
+		content: @timeline-badge-education;
+	  }
+	}
+	
+	.timeline > li > .timeline-badge {
+		.timeline-badge-base;
+		left: 16px;
+	}
+	
+	.timeline > li > .timeline-panel-left {
+		.timeline-panel;
+		
+		text-align: left; 
+		margin-left: @timeline-panel-margin / 2;
+	}
+	
+	.timeline > li > .timeline-panel-right {
+		.timeline-panel;
+		
+		text-align: left; 
+		margin-left: @timeline-panel-margin / 2;
+	}
+	
+	@timeline-panel-margin: 64px;
+
+	.timeline-panel {
+		width: 256px;
+			
+		padding: 16px;	
+			
+		.head {
+			.title {
+				font-size: 16px;
+				color: inherit;			 
+			}
+			.header {
+				font-size: 14px;
+				color: inherit;
+				opacity: 0.8;
+			}
+			.time {
+				margin-top: -16px;
+				font-size: 12px;
+				color: inherit;
+				opacity: 0.7;
+			}
+		}
+		
+		.body {
+			font-size: 12px;
+			opacity: 0.5;
+		}
+	}
+}
+
+@media only screen and (min-width: 1024px){
+
+	.timeline > li > .timeline-badge {
+		.timeline-badge-base;
+		left: 50%;
+	}
+
+	.timeline-panel {
+		width: 256px;
+			
+		padding: 16px;	
+			
+		.head {
+			.title {
+				font-size: 18px;
+				color: inherit;			 
+			}
+			.header {
+				font-size: 16px;
+				color: inherit;
+				opacity: 0.8;
+			}
+			.time {
+				margin-top: -16px;
+				font-size: 14px;
+				color: inherit;
+				opacity: 0.7;
+			}
+		}
+		
+		.body {
+			font-size: 14px;
+			opacity: 0.5;
+		}
+	}
+	
+	.timeline > li > .timeline-panel-left {
+		.timeline-panel;
+
+		text-align: right; 
+		margin-right: 256px + @timeline-panel-margin;
+	}
+	
+	.timeline > li > .timeline-panel-right {
+		.timeline-panel;
+		
+		text-align: left; 
+		margin-left: 256px + @timeline-panel-margin;
+	}
+}

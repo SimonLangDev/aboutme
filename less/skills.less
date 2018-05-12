@@ -1,0 +1,69 @@
+/*****************/
+/* Skills styles */
+/*****************/
+
+#skills {
+	display: table;
+	
+	font-family: 'Oxygen Mono', monospace;
+	
+	margin-top: 64px;
+}
+
+.progress {
+	height: 4px;
+	margin-bottom: 16px;
+}
+
+.progress-bar {
+	height: 100%;
+	width: 100%;
+}
+
+.skill-column {	
+	padding: 0px 8px;
+	margin: 16px;
+}
+
+.skill-title {
+	text-align: left;
+	opacity: 0.8;
+	
+	font-size: 12px;
+}
+.skill {
+	text-align: left;
+	width: 384px;
+	
+	font-size: 12px;
+	
+	.header {
+		margin-bottom: 6px;
+	}
+}
+
+@media only screen and (max-width: 1023px){
+
+	#skills {
+		display: table;
+		margin-top: 32px;
+	}
+
+	.skill-column {
+		margin: 16px;
+	}
+
+	.skill-title {		
+		margin-top: 24px;
+	}
+	.skill {
+		width: 100%;
+	}
+}
+
+@media only screen and (min-width: 1024px){
+
+	.skill-column {
+		display: table-cell;
+	}
+}

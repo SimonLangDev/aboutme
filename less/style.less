@@ -1,0 +1,115 @@
+@images: "../images/";
+
+@text-color: #ffffff;
+@inverted-text-color: #000000;
+@background-color: rgba(128, 216, 255, 0.8);
+@cover-color: #80d8ff;
+
+/***************/
+/* Text styles */
+/***************/
+
+.t{
+	color: @text-color;
+	font-family: 'Dancing Script', cursive;
+}
+.t1{
+	.t;
+	font-size: 64px;	
+}
+.t2{
+	.t;
+	font-size: 32px;
+}
+.t3{
+	font-size: 20px;
+}
+
+.chapter{
+	font-size: 48px;
+	font-family: 'Dancing Script', cursive;
+}
+
+/*****************/
+/* Layout styles */
+/*****************/
+
+.welcome{
+	display: table;
+
+	height: 100vh;
+	width: 100%;
+}
+
+.background{
+	background-color: @background-color;
+	
+	font-family: 'Oxygen Mono', monospace;
+	color: @text-color;
+	
+	height: 100%;
+	width: 100%;
+}
+
+.section{
+	padding-top: 64px;
+}
+
+/******************************************/
+/* Center element horizontal and vertical */
+/******************************************/
+
+.container{
+    min-height: 6em;
+    position: relative;
+}
+.center-area{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.center-area:before{
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+}
+.centered{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/*Mobile portrait*/
+@media only screen and (max-width: 1023px), (max-height: 767px){
+	
+	.t1{
+		font-size: 48px;	
+	}
+	.t2{
+		font-size: 24px;
+	}
+	.t3{
+		font-size: 16px;
+	}
+	
+	.chapter{
+		font-size: 36px;
+	}
+	
+	.section{
+		padding-top: 48px;
+	}
+}
+
+/***********************/
+/* Import other styles */
+/***********************/
+
+@import "navbar.less";
+@import "cover.less";
+@import "aboutme.less";
+@import "resume.less";
+@import "skills.less";
+@import "projects.less";

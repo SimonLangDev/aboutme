@@ -1,0 +1,72 @@
+/****************/
+/* Cover styles */
+/****************/
+
+#cover { 
+    background-image: url("@{images}cover.png");    
+	
+	display: table-row;
+	
+	height: 100%;
+	width: 100%;
+	
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#cover-color { 
+    background-color: @cover-color;
+	opacity: 0.9;
+	
+	height: inherit;
+}
+
+/******************/
+/* Profile styles */
+/******************/
+
+#profile {
+	width: 256px;
+	height: 256px;
+		
+	margin-top: 48px;
+	margin-bottom: 96px;
+	
+	border-radius: 50%;
+}
+
+/***********************/
+/* Social icons styles */
+/***********************/
+
+.social-icons-container{
+	margin-top: 64px;
+}
+.social-icon {  	
+	color: white;
+	font-size: 32px;
+	
+	margin-left: 24px;
+	margin-right: 24px;
+}
+
+@media only screen and (max-width: 1023px), (max-height: 767px){
+	
+	#profile {
+		width: 192px;
+		height: 192px;
+		
+		margin-top: 32px;
+		margin-bottom: 64px;
+	}
+	
+	.social-icons-container{
+		margin-top: 48px;
+	}
+	.social-icon {  	
+		font-size: 24px;
+		
+		margin-left: 16px;
+		margin-right: 16px;
+	}
+}
