@@ -154,6 +154,7 @@
   width: 50%;
   font-size: 16px;
   text-align: left;
+  margin-bottom: 64px;
 }
 #life {
   display: table;
@@ -178,6 +179,7 @@
 @media only screen and (min-width: 512px) and (max-width: 1023px) {
   #aboutme {
     width: 70%;
+    margin-bottom: 48px;
   }
   #coding {
     height: 80px;
@@ -188,6 +190,7 @@
   #aboutme {
     font-size: 14px;
     width: 80%;
+    margin-bottom: 32px;
   }
   #coding {
     height: 64px;
