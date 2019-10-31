@@ -39,6 +39,7 @@
 }
 .section {
   padding-top: 64px;
+  padding-bottom: 32px;
 }
 /******************************************/
 /* Center element horizontal and vertical */
